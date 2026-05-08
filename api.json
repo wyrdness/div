@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/div",
     "maintainers": [
       {
@@ -18,69 +18,127 @@
   },
   "phenomenon": {
     "id": "div",
-    "name": "Div - Persian Demon",
-    "aliases": [],
+    "name": "Div",
+    "aliases": [
+      { "name": "Dīv / دیو", "language": "Persian", "meaning": "demon, ogre" },
+      { "name": "Daēva", "language": "Avestan", "meaning": "false god, demon (in Zoroastrian doctrine)" },
+      { "name": "Dēw", "language": "Middle Persian (Pahlavi)" },
+      { "name": "Div-e Sefīd", "language": "Persian", "meaning": "White Div, antagonist of the hero Rostam" },
+      { "name": "Akvān Div", "language": "Persian", "meaning": "demon defeated by Rostam" }
+    ],
     "category": "DEMON_ANGEL",
-    "subcategory": "Demons, evil spirits, chaos entities",
+    "subcategory": "Iranian and broader Persianate demon",
     "tags": [
-      "folklore",
-      "mythology"
+      "persian-mythology",
+      "iranian-folklore",
+      "zoroastrianism",
+      "shahnameh",
+      "demon",
+      "central-asia",
+      "caucasus"
     ],
     "status": "documented",
     "description": {
-      "summary": "Div (also spelled Daeva, Dīv, or Dēw) are malevolent supernatural entities in Persian mythology, representing demons, evil spirits, and forces of chaos and destruction.",
-      "full": "Div (also spelled Daeva, Dīv, or Dēw) are malevolent supernatural entities in Persian mythology, representing demons, evil spirits, and forces of chaos and destruction. Originating in ancient Zoroastrian cosmology where they were deities who became demons in opposition to Ahura Mazda, the div evolved through Persian history to become prominent figures in Islamic Persian folklore, literature, and art."
+      "summary": "A class of demons of Iranian and broader Persianate mythology, descended from the Avestan daēvas demonised under Zoroastrianism. Most famous as the divs of Ferdowsi's Shāhnāmeh — gigantic, horned, monstrous beings, including Div-e Sefid (the White Div) and Akvan Div — who oppose the hero Rostam.",
+      "full": "The div (Persian دیو, dīv; from Avestan daēva, 'false god') is a malevolent supernatural being of Iranian mythology with cognates and reflexes across the Persianate world (Tajik, Pashto, Kurdish, Azerbaijani, Armenian, Georgian, and Turkic traditions). In Zoroastrian theology, the daēvas are demons aligned with Angra Mainyu (Ahriman) against Ahura Mazda; the Avestan Vendīdād (literally 'law against the daēvas') prescribes ritual measures against them. After the Islamic conquest of Iran in the 7th century CE, the older daēva category was reshaped into the dīv of New Persian literature — gigantic, often horned and tusked humanoid creatures, frequently shape-shifters, dwelling in distant mountains and caves. The most famous div narratives are in Ferdowsi's Shāhnāmeh (completed c. 1010 CE): the Haft-Khān (Seven Labours) of Rostam culminate in the slaying of Div-e Sefid, the white div of Mazandaran, whose blood cures the blinded Kay Kāvus; and the Akvan Div episode, in which the demon hurls a sleeping Rostam into the sea. In folk tradition the divs play roles closer to ogres and giants of European folklore — to be tricked, blinded, and overcome by clever heroes — while in Sufi allegory they are read as personifications of the lower self (nafs) and of moral vice."
     },
     "etymology": {
-      "origin": "Persia/Iran (Zoroastrian and Islamic traditions)",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Indo-Iranian *daiwa- ('heavenly being'), cognate with Sanskrit deva ('god') and Latin deus. In Zoroastrian usage the term was inverted to denote false gods and demons.",
+      "meaning": "Demon, ogre, or evil spirit; in Zoroastrianism, a malign being aligned with Angra Mainyu.",
+      "first_use": "Avestan texts of the early-to-mid 1st millennium BCE; New Persian dīv attested from the 9th century CE onward, with full literary development in Ferdowsi's Shāhnāmeh (c. 977–1010 CE)."
     }
   },
   "classification": {
     "taxonomy": {
       "category": "DEMON_ANGEL",
-      "type": "Demons, evil spirits, chaos entities",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Iranian demon",
+      "subtype": "Gigantic ogre-like demon",
+      "variant": "Persianate (Persian, Tajik, Kurdish, Pashto, Caucasian)"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "djinn", "name": "Djinn / Jinn", "relationship": "related", "description": "Islamic order of supernatural beings often equated with divs in popular usage" },
+      { "id": "ifrit", "name": "Ifrit", "relationship": "similar", "description": "Powerful jinn category; sometimes equated with divs" },
+      { "id": "demons", "name": "Demons (general)", "relationship": "superset", "description": "Broader cross-cultural category" },
+      { "id": "rakshasa", "name": "Rakshasa", "relationship": "similar", "description": "South Asian demonic class with shared Indo-Iranian roots" },
+      { "id": "asmodeus", "name": "Asmodeus / Aēšma", "relationship": "subset", "description": "Aēšma is a major daēva-class demon in the Avesta" }
+    ]
   },
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 2.5, "max": 6.0, "unit": "meters", "confidence": "low" },
+      "coloration": ["white (Div-e Sefid)", "black", "red", "varied across local traditions"],
+      "features": [
+        { "feature": "Gigantic stature", "description": "Substantially taller than humans, often described as towering", "frequency": "always" },
+        { "feature": "Horns and tusks", "description": "Frequently depicted with curved horns and boar-like tusks in Shāhnāmeh manuscript painting", "frequency": "common" },
+        { "feature": "Shaggy hair / beast-like body", "description": "Coarse hair, animalistic limbs, sometimes claws", "frequency": "common" },
+        { "feature": "Shape-shifting capability", "description": "Capable of taking on human or animal disguises in folk tales", "frequency": "common" }
+      ],
+      "morphology": "Humanoid giant with monstrous features; in manuscript painting (Persian, Mughal, Ottoman) typically blue or grey-skinned with horns and tusks."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Magic and sorcery", "description": "Many divs are sorcerers, capable of illusion, weather control, and binding spells", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Shape-shifting", "description": "Disguise as humans, animals, or natural features", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Superhuman strength", "description": "Combat is generally against many human warriors at once", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Vulnerability to a single weakness", "description": "Often defeatable only by a particular hero, weapon, or hidden weakness (the 'external soul' motif)", "frequency": "common", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "aggressive",
+      "social_structure": "variable",
+      "habitat_preference": ["remote mountain ranges (especially Mazandaran)", "caves", "wells and pits", "abandoned ruins"],
+      "patterns": [
+        "Hold human victims captive (e.g. Kay Kāvus held in Mazandaran)",
+        "Are encountered as obstacles in heroic quests",
+        "May rule their own kingdoms in distant lands"
+      ]
     }
   },
   "distribution": {
     "range": {
-      "description": "Persia/Iran (Zoroastrian and Islamic traditions)",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "The Iranian and Persianate cultural sphere, including Iran, Tajikistan, Afghanistan, the Kurdish-speaking areas of Iraq and Turkey, the South Caucasus, and parts of South Asia influenced by Persian literary culture.",
+      "continents": ["Asia"],
+      "countries": ["Iran", "Tajikistan", "Afghanistan", "Azerbaijan", "Armenia", "Georgia", "Turkey", "Iraq (Kurdish areas)", "Pakistan", "India"],
+      "regions": ["Greater Iran", "Mazandaran", "Caucasus", "Central Asia", "Persianate South Asia"]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Mazandaran (legendary)",
+        "location": {
+          "description": "Region on the southern coast of the Caspian Sea; setting of the Haft-Khān episode",
+          "country": "Iran",
+          "region": "Mazandaran"
+        },
+        "peak_period": "Pre-Islamic legendary cycle; literary in Shāhnāmeh (c. 1010 CE)",
+        "notes": "The legendary Mazandaran of the Shāhnāmeh, ruled by divs, has been variously identified by scholars; it does not necessarily match the modern province exactly."
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "c. 1000 BCE",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Avestan literature (Vendīdād, Yashts)"
+      },
+      "peak_activity_periods": [
+        { "period": "Avestan period (c. 1000–500 BCE)", "description": "Zoroastrian religious framing of the daēvas" },
+        { "period": "977–1010 CE", "description": "Composition of Ferdowsi's Shāhnāmeh fixes the literary div" },
+        { "period": "13th–17th centuries CE", "description": "Persian, Mughal, and Ottoman manuscript painting establishes the visual iconography of the div" }
+      ]
     }
   },
   "history": {
     "origins": {
-      "cultural_roots": "Persia/Iran (Zoroastrian and Islamic traditions)",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Indo-Iranian religious vocabulary (daiva 'heavenly being'), inverted to mean 'demon' in the Zoroastrian reform.",
+      "earliest_accounts": "Avestan texts (Yashts, Vendīdād); Middle Persian Pahlavi literature (Bundahišn, Dēnkard).",
+      "folklore_connections": "Connected to wider Indo-Iranian and Indo-European demon-and-giant traditions; influences (and is influenced by) Islamic jinn and Arabic ʿifrīt categories after the 7th century."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "-1000-01-01", "event": "Avestan literature elaborates the doctrine of the daēvas", "significance": "Founding Zoroastrian demonology", "source": "Avesta (Yashts, Vendīdād)" },
+      { "date": "0900-01-01", "event": "Middle Persian Pahlavi works (Bundahišn, Dēnkard) systematise the div tradition", "significance": "Sasanian and post-Sasanian theology", "source": "Pahlavi literature" },
+      { "date": "1010-01-01", "event": "Ferdowsi completes the Shāhnāmeh; Rostam slays Div-e Sefid in the Haft-Khān", "significance": "Foundational literary treatment of divs in New Persian", "source": "Ferdowsi, Shāhnāmeh" },
+      { "date": "1330-01-01", "event": "Earliest illustrated Shāhnāmeh manuscripts (Great Mongol Shāhnāmeh, c. 1330) depict divs as horned, tusked, blue-skinned beings", "significance": "Establishes the canonical visual type", "source": "Great Mongol Shāhnāmeh, manuscript dispersed across world collections" },
+      { "date": "1500-01-01", "event": "Safavid-era Shāhnāmeh of Shah Tahmasp (c. 1525–1535) further codifies div imagery", "significance": "High point of Persian miniature treatment of divs", "source": "Shāhnāmeh of Shah Tahmasp" }
+    ],
+    "modern_era": "Divs survive in modern Iranian, Tajik, Afghan, and Caucasian folktales (e.g. tales collected by Sadeq Hedayat in Neyrangestān, 1933, and others), in children's literature, and in the visual arts; and as a pervasive metaphor in Sufi poetry for the carnal soul (nafs). In contemporary Iranian popular culture they are familiar villains in cinema, animation, and games."
   },
   "sightings": {
     "statistics": {
@@ -93,34 +151,110 @@
     "database_path": "./sightings/"
   },
   "evidence": {
-    "physical": [],
-    "photographic": [],
-    "video": [],
-    "audio": [],
-    "trace": []
+    "documentary": [
+      {
+        "id": "div-evidence-shahnameh",
+        "type": "literary text",
+        "name": "Shāhnāmeh of Ferdowsi",
+        "date": "1010",
+        "description": "Ferdowsi's monumental Persian epic, c. 50,000 couplets, in which divs are major adversaries.",
+        "status": "verified",
+        "analysis": "Foundational text for the New Persian div tradition; the Haft-Khān and Akvan Div episodes are the most-cited.",
+        "source": "Ferdowsi, A. Q. (c. 1010), Shāhnāmeh"
+      },
+      {
+        "id": "div-evidence-vendidad",
+        "type": "religious text",
+        "name": "Vendīdād",
+        "description": "Avestan legal-liturgical text whose title means 'Law against the daēvas'.",
+        "status": "verified",
+        "analysis": "Primary Avestan source for Zoroastrian daēva-demonology.",
+        "source": "Vendīdād (Avesta)"
+      }
+    ]
   },
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Real demonic beings",
+        "description": "Within Zoroastrian doctrine and within popular Iranian and Caucasian folk belief, divs are real malevolent beings opposed to humans and the divine order.",
+        "proponents": ["Zoroastrian theological tradition", "Iranian folk tradition"],
+        "evidence_cited": ["Avestan and Pahlavi literature", "Continuous oral tradition"]
+      },
+      {
+        "name": "Sufi allegorical reading",
+        "description": "In Persian Sufi poetry the divs symbolise the lower self (nafs) and moral vices to be conquered by the spiritual seeker.",
+        "proponents": ["Rumi", "Hafez", "Various Sufi commentators"],
+        "evidence_cited": ["Sufi poetic tradition"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Indo-Iranian religious-history explanation",
+        "description": "The div is the result of a religious-historical inversion of the older Indo-Iranian daiwa-/deva- 'god' category under Zoroastrian reform, later reshaped by post-Islamic Persianate culture.",
+        "proponents": ["Mary Boyce", "Almut Hintze", "Mahmoud Omidsalar"],
+        "evidence_cited": ["Comparative Indo-Iranian linguistics", "Avestan, Pahlavi, and New Persian textual record"]
+      }
+    ]
   },
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Zoroastrian theological tradition",
+        "Persian epic and literary tradition (Shāhnāmeh and post-Shāhnāmeh)",
+        "Caucasian and Central Asian folk-tale traditions"
+      ],
+      "stories": [
+        "Rostam and Div-e Sefid (Shāhnāmeh, Haft-Khān)",
+        "Akvan Div hurls Rostam into the sea (Shāhnāmeh)",
+        "Various Caucasian and Central Asian dīv folk tales (e.g. Hamzanama traditions)"
+      ],
+      "beliefs": "In contemporary Iranian and Caucasian folk traditions divs function as ogres of folktale, while in religious-historical context they are part of Zoroastrian demonology."
+    },
+    "indigenous": {
+      "cultures": ["Iranian peoples", "Tajiks", "Pashtuns", "Kurds", "Azerbaijanis", "Armenians", "Georgians"],
+      "significance": "Divs are a deep stratum of Iranian and Persianate cultural memory, woven into the Shāhnāmeh and into the literary and visual heritage of the Persianate world.",
+      "sensitivity_note": "The Avestan daēva-category belongs to the living Zoroastrian tradition; treat religious sources with appropriate respect and distinguish them from folkloric reuse."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "Shāhnāmeh — Ferdowsi (c. 1010)",
+        "Neyrangestān — Sadeq Hedayat (1933)",
+        "The Heroic Age of Persia — Theodor Nöldeke / E. G. Browne (early 20th century)",
+        "Persian Myths — Vesta Sarkhosh Curtis (1993)"
+      ],
+      "film_tv": [
+        "Bahram Beyzaie's adaptations of Shāhnāmeh material",
+        "Rostam and Sohrab (1957, dir. Shapur Yasami)",
+        "The Last Fiction (Ākharin Dāstān, 2017, animated, dir. Ashkan Rahgozar)"
+      ],
+      "games": [
+        "Garshasp: The Monster Slayer (2011, Iranian indie game)",
+        "Various Iranian indie titles drawing on the Shāhnāmeh"
+      ],
+      "other": [
+        "Persian, Mughal, and Ottoman manuscript painting of div figures",
+        "Sufi poetic tradition of div as nafs"
+      ]
     }
   },
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Mary Boyce", "affiliation": "School of Oriental and African Studies, University of London", "contribution": "Foundational scholarship on Zoroastrian religion and the daēvas", "period": "1950s–2006" },
+      { "name": "Almut Hintze", "affiliation": "SOAS, University of London", "contribution": "Avestan philology and Zoroastrian studies", "period": "1990s–present" },
+      { "name": "Mahmoud Omidsalar", "affiliation": "California State University, Los Angeles", "contribution": "Studies of the Shāhnāmeh and Iranian folklore, including div figures", "period": "1980s–present" }
+    ],
+    "organizations": [
+      { "name": "Encyclopædia Iranica", "url": "https://www.iranicaonline.org", "focus": "Authoritative reference work on Iranian culture and religion" },
+      { "name": "Shahnama Project, University of Cambridge", "url": "https://shahnama.lib.cam.ac.uk", "focus": "Database of illustrated Shāhnāmeh manuscripts" }
+    ],
+    "ongoing_studies": "Continuing scholarship on Zoroastrian demonology, on the Shāhnāmeh, and on Iranian and Caucasian folklore in universities worldwide."
   },
-  "sources": []
+  "sources": [
+    { "id": "ferdowsi-shahnameh", "type": "book", "title": "Shāhnāmeh (The Book of Kings)", "authors": ["Abu'l-Qasim Ferdowsi"], "publication": "Critical edition: Djalal Khaleghi-Motlagh (ed.), Bibliotheca Persica", "date": "c. 1010" },
+    { "id": "boyce-zoroastrians", "type": "book", "title": "Zoroastrians: Their Religious Beliefs and Practices", "authors": ["Mary Boyce"], "publication": "Routledge", "date": "1979", "isbn": "978-0415239035" },
+    { "id": "encyclopaedia-iranica-div", "type": "website", "title": "DĒW (Iranian demon)", "publication": "Encyclopædia Iranica", "url": "https://www.iranicaonline.org/articles/dew", "accessed": "2026-05-07" },
+    { "id": "wikipedia-div", "type": "website", "title": "Div (mythology)", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Div_(mythology)", "accessed": "2026-05-07" }
+  ]
 }
